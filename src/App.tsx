@@ -1,4 +1,4 @@
-  
+import Routes from "./routes/Routes"
 import './App.css'
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
   return (
     <>
     <h1 className='text-8xl'>
+    <Routes />
     </h1>
       
     </>

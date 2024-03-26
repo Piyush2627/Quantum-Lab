@@ -1,0 +1,156 @@
+[
+  {
+    "subjectName": "Python",
+    "sub_subjectName": [
+      "Basics",
+      "Control Flow",
+      "Data Structures",
+      "Functions",
+      "Modules",
+      "File Handling",
+      "Error Handling",
+      "Object-Oriented Programming",
+      "Regular Expressions",
+      "Concurrency",
+      "Networking",
+      "Web Development",
+      "GUI Development",
+      "Data Analysis",
+      "Machine Learning",
+      "Artificial Intelligence"
+    ]
+  },
+  {
+    "subjectName": "Java",
+    "sub_subjectName": [
+      "Syntax",
+      "Object-Oriented Programming",
+      "Data Types",
+      "Control Flow",
+      "Collections",
+      "Exception Handling",
+      "File I/O",
+      "Concurrency",
+      "Networking",
+      "GUI Development",
+      "Web Development",
+      "Mobile Development",
+      "Enterprise Applications"
+    ]
+  },
+  {
+    "subjectName": "JavaScript",
+    "sub_subjectName": [
+      "Syntax",
+      "Variables",
+      "Data Types",
+      "Operators",
+      "Functions",
+      "Objects",
+      "Arrays",
+      "Control Flow",
+      "DOM Manipulation",
+      "Events",
+      "AJAX",
+      "JSON Handling",
+      "Error Handling",
+      "Asynchronous Programming",
+      "ES6 Features",
+      "Frontend Frameworks (e.g., React, Angular, Vue)"
+    ]
+  },
+  {
+    "subjectName": "C++",
+    "sub_subjectName": [
+      "Syntax",
+      "Data Types",
+      "Pointers",
+      "Memory Management",
+      "Functions",
+      "Classes and Objects",
+      "Inheritance",
+      "Polymorphism",
+      "Operator Overloading",
+      "STL (Standard Template Library)",
+      "Concurrency",
+      "File Handling",
+      "Template Metaprogramming",
+      "Graphics Programming",
+      "Game Development"
+    ]
+  },
+  {
+    "subjectName": "C#",
+    "sub_subjectName": [
+      "Syntax",
+      "Data Types",
+      "Object-Oriented Programming",
+      "Control Flow",
+      "Collections",
+      "Exception Handling",
+      "File I/O",
+      "Concurrency",
+      "Networking",
+      "GUI Development",
+      "Web Development",
+      "Game Development",
+      ".NET Framework",
+      "ASP.NET"
+    ]
+  },
+  {
+    "subjectName": "Ruby",
+    "sub_subjectName": [
+      "Syntax",
+      "Object-Oriented Programming",
+      "Data Types",
+      "Control Flow",
+      "Collections",
+      "Exception Handling",
+      "File I/O",
+      "Concurrency",
+      "Metaprogramming",
+      "Web Development",
+      "Framework (e.g., Rails)"
+    ]
+  },
+  {
+    "subjectName": "Swift",
+    "sub_subjectName": [
+      "Syntax",
+      "Data Types",
+      "Optionals",
+      "Control Flow",
+      "Functions",
+      "Classes and Objects",
+      "Inheritance",
+      "Protocols",
+      "Error Handling",
+      "Concurrency",
+      "Memory Management",
+      "iOS Development",
+      "macOS Development",
+      "App Development"
+    ]
+  },
+  {
+    "subjectName": "PHP",
+    "sub_subjectName": [
+      "Syntax",
+      "Variables",
+      "Data Types",
+      "Operators",
+      "Control Flow",
+      "Functions",
+      "Arrays",
+      "Strings",
+      "Forms and Form Handling",
+      "Sessions and Cookies",
+      "File Handling",
+      "Database Integration",
+      "Object-Oriented Programming",
+      "Web Development",
+      "Frameworks (e.g., Laravel, Symfony)"
+    ]
+  }
+]
