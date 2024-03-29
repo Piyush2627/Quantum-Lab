@@ -17,11 +17,11 @@ export default function BasicCard({
 }: Props) {
   const [isCenter, setiscenter] = React.useState(centered);
   const [needButtons, setneedbuttons] = React.useState(buttontrue);
-  setneedbuttons
-  setiscenter
+  setneedbuttons;
+  setiscenter;
   return (
     <>
-      <div className="max-w-xs w-full bg-white border border-gray-200 rounded-lg shadow ">
+      <div className="max-w-xs w-full bg-white border  border-gray-200 rounded-lg shadow ">
         <a href="#">
           <img className="rounded-t-lg " src={imageUrl} alt="" />
         </a>
