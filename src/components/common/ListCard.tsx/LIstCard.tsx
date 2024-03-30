@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 interface ListCardProps {
@@ -16,8 +16,8 @@ function ListCard({
 }: ListCardProps) {
   const [needEmail, setNeedEmail] = useState(emailrequired);
   const [needAmount, setNeedAmount] = useState(amountRequired);
-  setNeedEmail
-  setNeedAmount
+  setNeedEmail;
+  setNeedAmount;
   return (
     <>
       <div className="w-full  p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8">
@@ -27,13 +27,10 @@ function ListCard({
           </h5>
         </div>
         <div className="flow-root">
-          <ul
-            role="list"
-            className="divide-y divide-gray-200 "
-          >
-            {data?.map((ele) => {
+          <ul role="list" className="divide-y divide-gray-200 ">
+            {data?.map((ele, index) => {
               return (
-                <li className="py-1 sm:py-2">
+                <li className="py-1 sm:py-2" key={index}>
                   <div className="flex items-center">
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium text-gray-900 truncate ">

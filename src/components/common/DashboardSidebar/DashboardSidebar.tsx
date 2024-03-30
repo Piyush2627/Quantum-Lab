@@ -10,8 +10,8 @@ const linkdata = [
   },
 
   {
-    name: "Attedence",
-    link: "/attedence",
+    name: "Testing",
+    link: "/testing",
   },
 ];
 function DashboardSidebar() {
