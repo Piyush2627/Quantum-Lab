@@ -4,14 +4,14 @@ const linkdata = [
     name: "Dashboard",
     link: "/",
   },
-  {
-    name: "MarkSheet",
-    link: "/markmarksheet",
-  },
 
   {
     name: "Testing",
     link: "/testing",
+  },
+  {
+    name: "Add Student",
+    link: "/addstudent",
   },
 ];
 function DashboardSidebar() {
