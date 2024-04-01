@@ -13,6 +13,10 @@ const linkdata = [
     name: "Add Student",
     link: "/addstudent",
   },
+  {
+    name: "Attedence",
+    link: "/attedence",
+  },
 ];
 function DashboardSidebar() {
   return (
