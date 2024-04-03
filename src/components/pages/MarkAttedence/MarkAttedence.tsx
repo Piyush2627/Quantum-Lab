@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 function MarkAttedence() {
   const [isStudentData, setIsStudentData] = useState([
     {
-      first_name: "piyush",
-      last_name: "dahiwadkar",
-      email: "piyushdahiwadkar89@gmail.com",
-      address: "ravat",
+      first_name: "",
+      last_name: "",
+      email: "@gmail.com",
+      address: "",
       gender: "male",
       roll_no: 3482,
       enrollment_no: 3000123,
@@ -22,9 +22,13 @@ function MarkAttedence() {
       .then((data) => setIsStudentData(data));
   }, []);
   console.log(isStudentData);
-  return <div className="w-full">Hello{
-  }
-  </div>;
+  return (
+    <div className="w-full">
+      <div className=" text-4xl text-center mt-4">
+        <h1>Mark Attednece</h1>
+      </div>
+    </div>
+  );
 }
 
 export default MarkAttedence;

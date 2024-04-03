@@ -38,27 +38,6 @@ function Dashboard() {
             </div>
           </div>
 
-          <div className="lg:flex lg:space-x-4 sm:justify-center mt-8 block text-center ">
-            <BasicCard
-              header="Heading"
-              contain="lorem ipsum dolor sit amet, consectetur adipis text et dolor sit amet, consectetur adipis consequ "
-              centered
-              buttontrue
-            />{" "}
-            <BasicCard
-              header="Heading"
-              contain="lorem ipsum dolor sit amet, consectetur adipis text et dolor sit amet, consectetur adipis consequ "
-              centered
-              buttontrue
-            />
-            <BasicCard
-              header="Heading"
-              contain="lorem ipsum dolor sit amet, consectetur adipis text et dolor sit amet, consectetur adipis consequ "
-              centered
-              buttontrue
-            />
-          </div>
-
           <div className="container m-auto text-center mt-16">
             <StudentPagenationTable data={isStudentData} />
           </div>

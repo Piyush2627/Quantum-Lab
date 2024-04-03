@@ -78,6 +78,7 @@ function AddStudentPage() {
                 onChange={(e) => {
                   setFirstname(e.target.value);
                 }}
+                required
               />
             </div>
             <div className="mb-5">
@@ -88,6 +89,7 @@ function AddStudentPage() {
                 Last Name
               </label>
               <input
+                required
                 type="text"
                 id="last_name"
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
@@ -110,6 +112,7 @@ function AddStudentPage() {
                 onChange={(e) => {
                   setemail(e.target.value);
                 }}
+                required
               />
             </div>
             <div className="mb-5">
@@ -126,6 +129,7 @@ function AddStudentPage() {
                 onChange={(e) => {
                   setRollNo(parseInt(e.target.value));
                 }}
+                required
               />
             </div>
             <div className="mb-5">
@@ -136,6 +140,7 @@ function AddStudentPage() {
                 Enrollment Number
               </label>
               <input
+                required
                 type="text"
                 id="enrollment_no"
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
@@ -157,7 +162,9 @@ function AddStudentPage() {
                 onChange={(e) => {
                   setgender(e.target.value);
                 }}
+                required
               >
+                <option>SELECT</option>
                 <option>Male</option>
                 <option>Female</option>
               </select>
@@ -178,6 +185,7 @@ function AddStudentPage() {
                   setYearAdmission(parseInt(e.target.value));
                 }}
               >
+                <option>SELECT</option>
                 <option>2019</option>
                 <option>2020</option>
                 <option>2021</option>
@@ -232,6 +240,7 @@ function AddStudentPage() {
                   setSem(parseInt(e.target.value));
                 }}
               >
+                <option>SELECT</option>
                 <option>1 sem</option>
                 <option>2 sem</option>
                 <option>3 sem</option>
@@ -254,6 +263,7 @@ function AddStudentPage() {
                   setBatch(parseInt(e.target.value));
                 }}
               >
+                <option>SELECT</option>
                 <option>1 batch</option>
                 <option>2 batch</option>
                 <option>3 batch</option>
@@ -263,8 +273,9 @@ function AddStudentPage() {
               </select>
             </div>
           </div>
-        </form>
+        </form>{" "}
         <button
+          type="submit"
           onClick={hendleOnSubmit}
           className="mt-7 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
         >
