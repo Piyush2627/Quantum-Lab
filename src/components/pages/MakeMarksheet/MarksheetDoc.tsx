@@ -1,7 +1,8 @@
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import  { RefObject, useRef } from "react";
- 
+import { RefObject, useRef } from "react";
+import MakeMarksheet from "./MakeMarksheet";
+
 function MarksheetDoc() {
   const pdfref: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null); // Define pdfref with RefObject<HTMLDivElement> type
   const downloadPDF = () => {
@@ -33,10 +34,14 @@ function MarksheetDoc() {
 
   return (
     <>
-      <div ref={pdfref}>
-        Whant to make a redyployment server
+      <div className="">
+        <button onClick={downloadPDF}>Download PDF</button>
       </div>
-      <button onClick={downloadPDF}>Download PDF</button>{" "}
+
+      <div ref={pdfref}>
+        <MakeMarksheet />
+      </div>
+
       {/* Added a button to trigger PDF download */}
     </>
   );

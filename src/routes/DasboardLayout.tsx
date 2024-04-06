@@ -1,4 +1,4 @@
- import DashboardSidebar from "../components/common/DashboardSidebar/DashboardSidebar";
+import DashboardSidebar from "../components/common/DashboardSidebar/DashboardSidebar";
 import { Outlet } from "react-router-dom";
 import Navigation from "../components/common/Navigation/Navigation";
 
@@ -10,7 +10,7 @@ function DasboardLayout() {
         <div className=" w-full flex-grow  lg:max-w-xs justify-center  p-4 border-r space-y-4 lg:h-screen lg:sticky top-0">
           <DashboardSidebar />
         </div>
-        <div className=" flex justify-center w-full">
+        <div className=" w-full">
           <Outlet />
         </div>
       </div>

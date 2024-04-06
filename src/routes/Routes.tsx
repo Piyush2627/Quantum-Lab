@@ -1,9 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "../components/pages/Dashboard/Dashboard";
-import MarkAttedence from "../components/pages/MarkAttedence/MarkAttedence";
+import MarkAttedence from "../components/pages/MarkAttedance/MarkAttedance";
 import DasboardLayout from "./DasboardLayout";
-import TestingWorkoutPage from "../components/pages/TestingWorkoutPage/TestingWorkoutPage";
 import AddStudentPage from "../components/pages/AddStudentPage/AddStudentPage";
+import MarksheetDoc from "../components/pages/MakeMarksheet/MarksheetDoc";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,13 +18,17 @@ const router = createBrowserRouter([
         path: "/attedence",
         element: <MarkAttedence />,
       },
-      {
-        path: "/testing",
-        element: <TestingWorkoutPage />,
-      },
+
       {
         path: "/addstudent",
         element: <AddStudentPage />,
+      },
+      {
+        path: "/makesheet",
+        element: <MarksheetDoc />,
+      },
+      {
+        path: "/eventHandling",
       },
     ],
   },

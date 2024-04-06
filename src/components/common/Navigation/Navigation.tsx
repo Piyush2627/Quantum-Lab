@@ -34,6 +34,7 @@ function Navigation() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [profileDraweeref]);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (

@@ -4,11 +4,6 @@ const linkdata = [
     name: "Dashboard",
     link: "/",
   },
-
-  {
-    name: "Testing",
-    link: "/testing",
-  },
   {
     name: "Add Student",
     link: "/addstudent",
@@ -16,6 +11,14 @@ const linkdata = [
   {
     name: "Attedence",
     link: "/attedence",
+  },
+  {
+    name: "Make Marksheet",
+    link: "/makesheet",
+  },
+  {
+    name: "Event Hendling",
+    link: "/eventHandling",
   },
 ];
 function DashboardSidebar() {
