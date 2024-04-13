@@ -4,6 +4,7 @@ import MarkAttedence from "../components/pages/MarkAttedance/MarkAttedance";
 import DasboardLayout from "./DasboardLayout";
 import AddStudentPage from "../components/pages/AddStudentPage/AddStudentPage";
 import MarksheetDoc from "../components/pages/MakeMarksheet/MarksheetDoc";
+import EventHandling from "../components/pages/EventHandling/EventHandling";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/eventHandling",
+        element: <EventHandling />,
       },
     ],
   },

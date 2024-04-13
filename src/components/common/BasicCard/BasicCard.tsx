@@ -6,6 +6,7 @@ interface Props {
   buttontrue?: boolean;
   imageUrl?: string;
   centered?: boolean;
+  dated?: string;
 }
 
 export default function BasicCard({

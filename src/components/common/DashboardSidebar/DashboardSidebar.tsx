@@ -20,6 +20,10 @@ const linkdata = [
     name: "Event Hendling",
     link: "/eventHandling",
   },
+  {
+    name: "Project Management",
+    link: "/projectManagement",
+  },
 ];
 function DashboardSidebar() {
   return (

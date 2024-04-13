@@ -1,23 +1,21 @@
 import { useEffect, useState } from "react";
-import BasicCard from "../../common/BasicCard/BasicCard";
 import StudentPagenationTable from "../../common/studentPagenationTable/StudentPagenationTable";
 
+interface StudentDataProps {
+  first_name: string;
+  last_name: string;
+  email: string;
+  address: string;
+  gender: string;
+  roll_no: number;
+  enrollment_no: number;
+  year_admission: number;
+  phone: number;
+  sem: number;
+}
+
 function Dashboard() {
-  const [isStudentData, setIsStudentData] = useState([
-    {
-      first_name: "piyush",
-      last_name: "dahiwadkar",
-      email: "piyushdahiwadkar89@gmail.com",
-      address: "ravat",
-      gender: "male",
-      roll_no: 3482,
-      enrollment_no: 3000123,
-      year_admission: 2023,
-      phone: 9662722205,
-      sem: 2,
-      batch: 3,
-    },
-  ]);
+  const [isStudentData, setIsStudentData] = useState<StudentDataProps[]>([]);
   useEffect(() => {
     fetch("http://localhost:4000/api/students")
       .then((response) => response.json())
