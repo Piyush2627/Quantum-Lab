@@ -22,7 +22,7 @@ export default function BasicCard({
   setiscenter;
   return (
     <>
-      <div className="max-w-xs w-full bg-white border  border-gray-200 rounded-lg shadow ">
+      <div className="w-max max-w-xs  bg-white border  border-gray-200 rounded-lg shadow ">
         <a href="#">
           <img className="rounded-t-lg " src={imageUrl} alt="" />
         </a>

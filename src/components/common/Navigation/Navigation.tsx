@@ -5,6 +5,7 @@ import SideNavBar from "../SideNavBar/SideNavBar";
 import AttachmentIcon from "@mui/icons-material/Attachment";
 import NavSearvh from "../NavSearch/NavSearvh";
 import ProfileSideBar from "../ProfileSideBar/ProfileSideBar";
+import { GitHub } from "@mui/icons-material";
 function Navigation() {
   const [sideNavBar, setSideNavBar] = React.useState(false);
   const [profileDraweer, setProfileDraweer] = React.useState(false);
@@ -73,7 +74,9 @@ function Navigation() {
                 <NavSearvh />
               </div>
               <div className="hidden sm:flex  justify-center items-center border size-10 rounded-md border-gray-200 hover:bg-gray-100">
-                <AttachmentIcon />
+                <a href="https://github.com/Piyush2627">
+                  <GitHub />
+                </a>
               </div>
               <div className="hidden sm:flex  justify-center items-center border size-10 rounded-md border-gray-200 hover:bg-gray-100">
                 <AttachmentIcon />

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import StudentPagenationTable from "../../common/studentPagenationTable/StudentPagenationTable";
+import BasicCard from "../../common/BasicCard/BasicCard";
 
 interface StudentDataProps {
   first_name: string;
@@ -35,8 +36,15 @@ function Dashboard() {
               <div></div>
             </div>
           </div>
-
-          <div className="container m-auto text-center mt-16">
+          <div className="flex space-x-4 justify-center mt-2">
+            <BasicCard contain={isStudentData.length} header="Student Count" />
+            <BasicCard contain={isStudentData.length} header="Current Events" />
+            <BasicCard
+              contain={isStudentData.length}
+              header="Total Count Of Student"
+            />
+          </div>
+          <div className="container m-auto text-center mt-8">
             <StudentPagenationTable data={isStudentData} />
           </div>
         </div>

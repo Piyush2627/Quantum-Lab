@@ -1,4 +1,7 @@
-function EventCard() {
+interface EventCardProps {
+  shouButtonEvent: () => void;
+}
+function EventCard({ shouButtonEvent }: EventCardProps) {
   return (
     <div className="max-w-xs w-full bg-white border  border-gray-200 rounded-lg shadow  relative">
       <div className="p-5">
@@ -15,7 +18,10 @@ function EventCard() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla itaque
           laudantium cum.
         </div>
-        <button className="bg-violet-600 text-white py-2 rounded-md px-4">
+        <button
+          className="bg-violet-600 text-white py-2 rounded-md px-4"
+          onClick={shouButtonEvent}
+        >
           {" "}
           Show Details
         </button>
