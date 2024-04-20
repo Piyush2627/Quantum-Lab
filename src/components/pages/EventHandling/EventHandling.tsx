@@ -22,6 +22,44 @@ function EventHandling() {
           EventState={isEventModelOpen}
         />
       )}
+      <div className="my-3 text-2xl">Add Event this Section</div>
+      <div>
+        <form>
+          <div className="mb-3">
+            <label className="form-label">Event Name</label>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter Event Name"
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Event Date</label>
+            <input
+              type="date"
+              className="form-control"
+              placeholder="Enter Event Date"
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Event Time</label>
+            <input
+              type="time"
+              className="form-control"
+              placeholder="Enter Event Time"
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Venue</label>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter Venue"
+            />
+          </div>
+          <div>make this event</div>
+        </form>
+      </div>
     </div>
   );
 }

@@ -9,8 +9,12 @@ const linkdata = [
     link: "/addstudent",
   },
   {
-    name: "Attedence",
+    name: "Attedence Admin",
     link: "/attedence",
+  },
+  {
+    name: "Student Atedence",
+    link: "/addteacher",
   },
   {
     name: "Make Marksheet",
