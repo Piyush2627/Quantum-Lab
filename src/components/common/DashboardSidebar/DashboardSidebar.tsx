@@ -2,31 +2,31 @@ import ListCard from "../ListCard.tsx/LIstCard";
 const linkdata = [
   {
     name: "Dashboard",
-    link: "/",
+    link: "/dash/dashboard",
   },
   {
     name: "Add Student",
-    link: "/addstudent",
+    link: "/dash/addstudent",
   },
   {
     name: "Attedence Admin",
-    link: "/attedence",
+    link: "/dash/attedence",
   },
   {
     name: "Student Atedence",
-    link: "/addteacher",
+    link: "/dash/addteacher",
   },
   {
     name: "Make Marksheet",
-    link: "/makesheet",
+    link: "/dash/makesheet",
   },
   {
     name: "Event Hendling",
-    link: "/eventHandling",
+    link: "/dash/eventHandling",
   },
   {
     name: "Project Management",
-    link: "/projectManagement",
+    link: "/dash/projectManagement",
   },
 ];
 function DashboardSidebar() {

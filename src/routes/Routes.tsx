@@ -5,34 +5,39 @@ import DasboardLayout from "./DasboardLayout";
 import AddStudentPage from "../components/pages/AddStudentPage/AddStudentPage";
 import MarksheetDoc from "../components/pages/MakeMarksheet/MarksheetDoc";
 import EventHandling from "../components/pages/EventHandling/EventHandling";
+import Homepage from "./Homepage";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/dash",
     element: <DasboardLayout />,
     children: [
       {
-        path: "/",
+        path: "/dash/dashboard",
         element: <Dashboard />,
       },
 
       {
-        path: "/attedence",
+        path: "/dash/attedence",
         element: <MarkAttedenceAdmin />,
       },
 
       {
-        path: "/addstudent",
+        path: "/dashaddstudent",
         element: <AddStudentPage />,
       },
       {
-        path: "/makesheet",
+        path: "/dashmakesheet",
         element: <MarksheetDoc />,
       },
       {
-        path: "/eventHandling",
+        path: "/dash/eventHandling",
         element: <EventHandling />,
       },
     ],
+  },
+  {
+    path: "/",
+    element: <Homepage />,
   },
 ]);
 
