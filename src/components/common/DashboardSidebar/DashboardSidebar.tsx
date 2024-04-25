@@ -12,10 +12,7 @@ const linkdata = [
     name: "Attedence Admin",
     link: "/dash/attedence",
   },
-  {
-    name: "Student Atedence",
-    link: "/dash/addteacher",
-  },
+
   {
     name: "Make Marksheet",
     link: "/dash/makesheet",

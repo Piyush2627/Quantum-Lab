@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import BasicCard from "../../common/BasicCard/BasicCard";
-
+import TextRevel from "../../animation/TextRevel/TextRevel";
 interface AttedanceDataProps {
   _id: string;
   student: string;
@@ -52,7 +51,7 @@ function MarkAttedanceAdmin() {
     if (matchingStudent) {
       setStudentId(matchingStudent._id); // Set the student ID based on matching first name
     } else {
-      setStudentId(""); // Reset student ID if no matching student is found
+      setStudentId("");
     }
   };
   const handleClick = () => {
@@ -64,15 +63,93 @@ function MarkAttedanceAdmin() {
 
   return (
     <div>
-      <div className="p-5">
-        <BasicCard
-          contain={attedanceData.length}
-          header="Total Count Of Student"
-        />
-      </div>
-      <div className="p-5 m-5 border rounded-md text-center shadow-md ">
+      <TextRevel>
+        <p className=" text-center capitalize text-3xl font-semibold pt-5">
+          manage attendance app
+        </p>
+
+        <p className=" text-center ">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
+          pariatur voluptatum magni.
+        </p>
+      </TextRevel>
+      <TextRevel Animationdelay={0.3}>
+        <div className="p-5">
+          <div className="lg:grid lg:space-x-5 space-x-0 grid-cols-3">
+            <div className=" col-span-2 ">
+              <div className=" border-2 rounded-xl p-5">
+                <p className="text-gray-500">Attedance Report</p>
+                <div className=" flex justify-between items-center">
+                  <p className=" text-lg font-bold">Report</p>
+                  <div className="font-bold text-sm text-white px-4 border rounded-lg  bg-violet-400 text-center py-2">
+                    Month
+                  </div>
+                </div>
+                <div className="border mt-4 rounded-lg p-5 relative">
+                  this section will show the report of the attedence, This
+                  section is going to be the graphecal representation of data
+                  <img
+                    src="https://i.ibb.co/SxS6JVX/Screenshot-2024-04-25-175201.png"
+                    alt="Screenshot-2024-04-25-175201"
+                    className=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="border-2 rounded-xl p-5 flex flex-col">
+              <p className="font-bold text-lg">Todays report</p>
+              <p className="font-thin text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur, non.
+              </p>
+              <div className=" text-center mt-2 font-semibold">Report</div>
+              <div className="flex justify-between space-x-3 py-4">
+                <div className=" p-1 w-full border-2 shadow-sm text-sm rounded-lg ">
+                  <p className="text-center">Report</p>
+                  <div className="text-center font-bold text-lg">20</div>
+                </div>
+                <div className=" p-1 w-full border-2 shadow-sm text-sm rounded-lg ">
+                  <p className="text-center">Report</p>
+                  <div className="text-center font-bold text-lg">20</div>
+                </div>
+                <div className=" p-1 w-full border-2 shadow-sm text-sm rounded-lg ">
+                  <p className="text-center">Report</p>
+                  <div className="text-center font-bold text-lg">20</div>
+                </div>
+              </div>
+              <div className="font-bold text-lg">Percentage</div>
+              <div className="w-full border rounded-md flex-grow mt-3">
+                <div className="flex-col flex-grow space-y-2 p-3">
+                  <div className="font-bold flex justify-between  px-2">
+                    <div>Parcentage</div>
+                    <div>20%</div>
+                  </div>
+                  <div className="bg-violet-400  text-violet-500 mx-2 rounded h-3.5  ">
+                    .
+                  </div>
+                  <div className="font-bold flex justify-between  px-2">
+                    <div>Parcentage</div>
+                    <div>20%</div>
+                  </div>
+                  <div className="bg-violet-400 text-violet-500 mx-2 rounded h-3.5  ">
+                    .
+                  </div>
+                  <div className="font-bold flex justify-between  px-2">
+                    <div>Parcentage</div>
+                    <div>20%</div>
+                  </div>
+                  <div className="bg-violet-400 text-violet-500 mx-2 rounded h-3.5  ">
+                    .
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </TextRevel>
+      <div className="p-5 m-5 border rounded-md text-center shadow-sm ">
         <p className=" text-lg font-semibold">
-          Enter the student name to get the data
+          Enter the student name to get the datax
         </p>
         <input
           className="border mx-5 border-black rounded-sm"
@@ -84,7 +161,7 @@ function MarkAttedanceAdmin() {
           className="border-0 bg-violet-300 px-4 py-2 rounded-md hover:bg-violet-500 hover:text-white "
           onClick={handleClick}
         >
-          click
+          Click
         </button>
       </div>
       {results.map((ele, index) => {
@@ -96,7 +173,21 @@ function MarkAttedanceAdmin() {
             </div>
           </div>
         );
-      })}
+      })}{" "}
+      <TextRevel>
+        <div className="m-5 p-5 border rounded-md  shadow-sm">
+          <p className=" font-bold text-lg">System Used today</p>
+          This will contain that whoe used the system and for how much time
+          <p>I will make the updata as soon as possioble </p>
+        </div>
+      </TextRevel>
+      <div className="m-5 p-5 border-red-500 border rounded-md">
+        <p className=" font-bold text-lg"> Low Attedenc alert</p>
+        <p>
+          This Section will show list of student who are having low rate of
+          attedence in lab{" "}
+        </p>
+      </div>
     </div>
   );
 }

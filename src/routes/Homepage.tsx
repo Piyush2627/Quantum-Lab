@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import BubbleText from "../components/common/BubbleText/BubbleText";
+import BubbleText from "../components/animation/BubbleText/BubbleText";
 function Homepage() {
   return (
     <>
