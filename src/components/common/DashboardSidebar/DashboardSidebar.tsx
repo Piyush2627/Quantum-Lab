@@ -9,7 +9,7 @@ const linkdata = [
     link: "/dash/addstudent",
   },
   {
-    name: "Attedence Admin",
+    name: "Attedence",
     link: "/dash/attedence",
   },
 
@@ -39,11 +39,6 @@ function DashboardSidebar() {
             amountRequired={false}
           />
         </div>
-        <div className=" font-medium text-xl">Have a nice day</div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, similique?
-        <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-        cupiditate.
       </div>
     </>
   );

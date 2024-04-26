@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import StudentPagenationTable from "../../common/studentPagenationTable/StudentPagenationTable";
 import BasicCard from "../../common/BasicCard/BasicCard";
+import TextRevel from "../../animation/TextRevel/TextRevel";
 
 interface StudentDataProps {
   first_name: string;
@@ -28,25 +29,38 @@ function Dashboard() {
         <div className="mx-6 w-full">
           <div className="container m-auto flex justify-center items-center">
             <div className=" text-center">
-              <div className="mt-12 sm:text-8xl text-6xl ">Quantum Lab</div>
-              <div className="sm:text-4xl  text-2xl"> Student Management</div>
-              <div className="text-xl sm:text-lg text-gray-400">
-                Efficiently Manage Student Activities and Resources
-              </div>
-              <div></div>
+              <TextRevel>
+                <div className="mt-12 sm:text-8xl text-6xl ">Quantum Lab</div>
+              </TextRevel>
+              <TextRevel>
+                <div className="sm:text-4xl  text-2xl"> Student Management</div>
+                <div className="text-xl sm:text-lg text-gray-400">
+                  Efficiently Manage Student Activities and Resources
+                </div>
+              </TextRevel>
             </div>
           </div>
-          <div className="flex space-x-4 justify-center mt-2">
-            <BasicCard contain={isStudentData.length} header="Student Count" />
-            <BasicCard contain={isStudentData.length} header="Current Events" />
-            <BasicCard
-              contain={isStudentData.length}
-              header="Total Count Of Student"
-            />
-          </div>
-          <div className="container m-auto text-center mt-8">
-            <StudentPagenationTable data={isStudentData} />
-          </div>
+          <TextRevel Animationdelay={0.3}>
+            <div className="flex space-x-4 justify-center mt-2">
+              <BasicCard
+                contain={isStudentData.length}
+                header="Student Count"
+              />
+              <BasicCard
+                contain={isStudentData.length}
+                header="Current Events"
+              />
+              <BasicCard
+                contain={isStudentData.length}
+                header="Total Count Of Student"
+              />
+            </div>
+          </TextRevel>
+          <TextRevel Animationdelay={0.6}>
+            <div className="container m-auto text-center mt-8">
+              <StudentPagenationTable data={isStudentData} />
+            </div>
+          </TextRevel>
         </div>
       </div>
     </>

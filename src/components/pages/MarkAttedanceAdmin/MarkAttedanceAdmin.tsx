@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TextRevel from "../../animation/TextRevel/TextRevel";
+import EncryptedButton from "../../animation/EncryptedButton/EncryptedButton";
 interface AttedanceDataProps {
   _id: string;
   student: string;
@@ -72,6 +73,15 @@ function MarkAttedanceAdmin() {
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
           pariatur voluptatum magni.
         </p>
+      </TextRevel>
+      <TextRevel>
+        <div className="m-5 p-5 lg:border-2 lg:rounded-md ">
+          <div className="flex space-x-5 lg:align-middle lg:items-center">
+            <p>Select Your Profile</p>
+            <EncryptedButton buttonText="Admin" />
+            <EncryptedButton buttonText="Student Section" />
+          </div>
+        </div>
       </TextRevel>
       <TextRevel Animationdelay={0.3}>
         <div className="p-5">
@@ -181,8 +191,28 @@ function MarkAttedanceAdmin() {
           <p>I will make the updata as soon as possioble </p>
         </div>
       </TextRevel>
+      <TextRevel>
+        <div className="m-5 p-5 border rounded-md">
+          <p className="font-bold text-lg ">Point System</p>
+          <div className=" flex justify-between">
+            <div>
+              <p>Top players Point</p>
+              <ul>
+                <li>list of Students</li>
+                <li>Student Name1</li>
+                <li>Student Name2</li>
+                <li>Student Name3</li>
+              </ul>
+            </div>
+            <div>
+              <div>Badges and Achievements:</div>
+              <div>Points and Rewards:</div>
+            </div>
+          </div>
+        </div>
+      </TextRevel>
       <div className="m-5 p-5 border-red-500 border rounded-md">
-        <p className=" font-bold text-lg"> Low Attedenc alert</p>
+        <p className=" font-bold text-lg"> Low Attedancc alert</p>
         <p>
           This Section will show list of student who are having low rate of
           attedence in lab{" "}
