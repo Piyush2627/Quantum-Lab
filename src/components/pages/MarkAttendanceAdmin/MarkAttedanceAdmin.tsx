@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TextRevel from "../../animation/TextRevel/TextRevel";
 import EncryptedButton from "../../animation/EncryptedButton/EncryptedButton";
+import { Link } from "react-router-dom";
 interface AttedanceDataProps {
   _id: string;
   student: string;
@@ -79,7 +80,9 @@ function MarkAttedanceAdmin() {
           <div className="flex space-x-5 lg:align-middle lg:items-center">
             <p>Select Your Profile</p>
             <EncryptedButton buttonText="Admin" />
-            <EncryptedButton buttonText="Student Section" />
+            <Link to={"/Student/Attendence"}>
+              <EncryptedButton buttonText="Student Section" />
+            </Link>
           </div>
         </div>
       </TextRevel>

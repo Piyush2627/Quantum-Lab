@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import BubbleText from "../components/animation/BubbleText/BubbleText";
 import TextRevel from "../components/animation/TextRevel/TextRevel";
-function Homepage() {
+function LoginLayout() {
   return (
     <>
       <div className="lg:h-screen lg:w-screen">
@@ -30,7 +30,7 @@ function Homepage() {
               <div className="mt-6">
                 <TextRevel Animationdelay={0.6}>
                   <Link
-                    to="/dash/dashboard"
+                    to="/dash"
                     className="px-5 py-2.5 relative rounded group text-white font-medium inline-block"
                   >
                     <span className="absolute top-0 left-0 w-full h-full rounded-md- opacity-50 filter blur-sm bg-gradient-to-br from-violet-900 to-blue-500"></span>
@@ -58,4 +58,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default LoginLayout;

@@ -2,7 +2,7 @@ import ListCard from "../ListCard.tsx/LIstCard";
 const linkdata = [
   {
     name: "Dashboard",
-    link: "/dash/dashboard",
+    link: "/dash",
   },
   {
     name: "Add Student",

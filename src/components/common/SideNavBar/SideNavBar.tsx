@@ -1,5 +1,7 @@
- import CloseIcon from "@mui/icons-material/Close";
-import DashboardSidebar from "../DashboardSidebar/DashboardSidebar";
+import CloseIcon from "@mui/icons-material/Close";
+import { Link } from "react-router-dom";
+import EncryptedButton from "../../animation/EncryptedButton/EncryptedButton";
+
 interface SideBarProp {
   toggleSidebar: () => void;
 }
@@ -15,7 +17,10 @@ function SideNavBar({ toggleSidebar }: SideBarProp) {
           <CloseIcon />
         </button>
       </div>
-      <DashboardSidebar />
+
+      <Link to={"/dash"} onClick={toggleSidebar}>
+        <EncryptedButton buttonText="home" />
+      </Link>
     </div>
   );
 }
