@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import BubbleText from "../components/animation/BubbleText/BubbleText";
 import TextRevel from "../components/animation/TextRevel/TextRevel";
+import AnimateLeft from "../components/animation/AnimateLeft/AnimateLeft";
 function LoginLayout() {
   return (
     <>
       <div className="lg:h-screen lg:w-screen">
         <div className=" lg:flex justify-between">
-          <div className=" h-screen  w-full ">
+          <div className=" h-screen w-1/2 ">
             <div className=" container p-14">
               <div className="lg:mt-32">
                 <TextRevel>
@@ -45,13 +46,15 @@ function LoginLayout() {
           </div>
 
           {/* img container */}
-          <div className="  h-screen w-full">
-            <div className=" p-6 w-full h-full">
-              <div className="bg-violet-400 h-full rounded-2xl">
-                container img
+          <AnimateLeft className="w-1/2" Animationdelay={0.5}>
+            <div className="h-screen w-full">
+              <div className=" p-6 w-full h-full">
+                <div className="bg-violet-400 h-full w-full rounded-2xl p-5">
+                  Container img
+                </div>
               </div>
             </div>
-          </div>
+          </AnimateLeft>
         </div>
       </div>
     </>

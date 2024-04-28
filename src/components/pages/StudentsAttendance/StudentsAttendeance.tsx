@@ -2,6 +2,7 @@ import TextRevel from "../../animation/TextRevel/TextRevel";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
+import InputComponent from "../../common/InputComponent/InputComponent";
 
 function StudentsAttendeance() {
   let navigate = useNavigate();
@@ -10,7 +11,7 @@ function StudentsAttendeance() {
     <div>
       <div className="flex">
         <button
-          className="p-1 m-2 border rounded-full hover:bg-violet-200"
+          className="p-1 m-2 ml-5 border rounded-full hover:bg-violet-200"
           onClick={() => navigate(-1)}
         >
           <ArrowBackIcon fontSize="large" />
@@ -24,7 +25,7 @@ function StudentsAttendeance() {
         <div className="p-5 m-5  border rounded-md">
           <div className="text-xl font-semibold">Find your profile</div>
           <div className="mt-3">
-            <div className="bg-violet-500 w-max flex items-center rounded-md">
+            <div className="bg-violet-500 shadow-violet-800 shadow-lg w-max flex items-center rounded-md">
               <SearchIcon className=" text-white pl-2" fontSize="large" />
               <input
                 type="text"
@@ -35,8 +36,24 @@ function StudentsAttendeance() {
             </div>
           </div>
           <div className="mt-5 space-x-5 flex justify-between">
-            <div className="p-5 rounded-md border-2 w-full">Section 1</div>
-            <div className="p-5 rounded-md border-2 w-full">Section 2</div>
+            <div className="p-5 rounded-md border-2 w-full">
+              <div className="font-bold text-lg"> Student's Name</div>
+              <div>Mark Attendance</div>
+
+              <div>
+                <button className="py-2 mt-3   bg-violet-500 rounded-md text-white px-4 placeholder:text-white">
+                  Mark Today
+                </button>
+              </div>
+            </div>
+
+            <div className="p-5 rounded-md border-2 w-full">
+              <div className="mb-5">
+                <InputComponent lableText="Comment" />
+                <InputComponent lableText="Time Spent" />
+                <InputComponent lableText="Used Tech No" />
+              </div>
+            </div>
             <div className="p-5 rounded-md border-2 w-full">Section 3</div>
           </div>
         </div>
