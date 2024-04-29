@@ -38,7 +38,7 @@ function StudentsAttendeance() {
           <div className="mt-5 space-x-5 flex justify-between">
             <div className="p-5 rounded-md border-2 w-full">
               <div className="font-bold text-lg"> Student's Name</div>
-              <div>Mark Attendance</div>
+              <div className=" bg-blackRock-500 ">Mark Attendance</div>
 
               <div>
                 <button className="py-2 mt-3   bg-violet-500 rounded-md text-white px-4 placeholder:text-white">
