@@ -28,12 +28,21 @@ interface StudentDataProps {
   oral?: number;
 }
 
+//date elements
+function getDate() {
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const year = today.getFullYear();
+  const date = today.getDate();
+  return `${month}/${date}/${year}`;
+}
 function MarkAttedanceAdmin() {
   const [attedanceData, setAttedanceData] = useState<AttedanceDataProps[]>([]);
   const [studentData, setStudentData] = useState<StudentDataProps[]>([]);
   const [studentId, setStudentId] = useState<string>(""); // State variable for student ID
   const [searchName, setSearchName] = useState<string>(""); // State variable for search name
   const [results, setResults] = useState<AttedanceDataProps[]>([]);
+  const [date, setDate] = useState<string>(getDate());
   useEffect(() => {
     fetch("http://localhost:4000/api/attendance")
       .then((response) => response.json())
@@ -43,6 +52,9 @@ function MarkAttedanceAdmin() {
     fetch("http://localhost:4000/api/students")
       .then((response) => response.json())
       .then((data) => setStudentData(data));
+  }, []);
+  useEffect(() => {
+    setDate(getDate());
   }, []);
 
   const inputhandelchange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -79,10 +91,10 @@ function MarkAttedanceAdmin() {
         <div className="m-5 p-5 lg:border-2 lg:rounded-md ">
           <div className="flex space-x-5 lg:align-middle lg:items-center">
             <p>Select Your Profile</p>
-            <EncryptedButton buttonText="Admin" />
             <Link to={"/Student/Attendence"}>
               <EncryptedButton buttonText="Student Section" />
             </Link>
+            <div className="text-3xl">{date}</div>
           </div>
         </div>
       </TextRevel>
@@ -172,8 +184,7 @@ function MarkAttedanceAdmin() {
         />
         <button
           className="border-0 bg-violet-300 px-4 py-2 rounded-md hover:bg-violet-500 hover:text-white "
-          onClick={handleClick}
-        >
+          onClick={handleClick}>
           Click
         </button>
       </div>
@@ -214,11 +225,11 @@ function MarkAttedanceAdmin() {
           </div>
         </div>
       </TextRevel>
-      <div className="m-5 p-5 border-red-500 border rounded-md">
+      <div className="m-5 p-5 rounded-md">
         <p className=" font-bold text-lg"> Low Attedancc alert</p>
         <p>
           This Section will show list of student who are having low rate of
-          attedence in lab{" "}
+          attedence in lab
         </p>
       </div>
     </div>
