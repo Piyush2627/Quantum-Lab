@@ -1,10 +1,4 @@
- import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import "./index.css";
- import Routes from "./routes/Routes";
-
-
-
-
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <Routes />
-);
+import App from "./App";
+ReactDOM.createRoot(document.getElementById("root")!).render(<App />);

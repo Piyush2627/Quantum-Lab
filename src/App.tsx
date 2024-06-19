@@ -1,16 +1,12 @@
-import Routes from "./routes/Routes"
-import './App.css'
+import Routes from "./routes/Routes";
+import "./App.css";
 
 function App() {
- 
   return (
     <>
-    <h1 className='text-8xl'>
-    <Routes />
-    </h1>
-      
+      <Routes />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
